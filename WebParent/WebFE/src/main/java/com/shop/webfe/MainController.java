@@ -17,7 +17,7 @@ public class MainController {
 	ProductService productService;
 	@Autowired
 	CustomerRepository customerRepository;
-	@GetMapping("")
+	@GetMapping
 	public ModelAndView viewIndex(){
 		return new ModelAndView("index","products",productService.listProduct());
 	}
